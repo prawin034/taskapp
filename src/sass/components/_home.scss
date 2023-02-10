@@ -1,0 +1,62 @@
+.home {
+  &_heading {
+    text-align: center;
+  }
+
+  &_form {
+    margin: 5rem auto;
+    width: 100%;
+    &_box {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      &_input {
+        width: 20%;
+        border: none;
+        height: 5rem;
+        border: 1px solid #868e96;
+        padding: 1rem;
+        font-size: $text-large;
+        border-radius: 0.3rem;
+      }
+      &_btn,
+      &_btn:link,
+      &_btn:visited {
+        border: 1px solid $color-stylish;
+        background: none;
+        width: 10rem;
+        height: 5rem;
+        text-align: center;
+        padding: 1rem;
+        color: $color-stylish;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.5s ease;
+      }
+      &_btn:hover {
+        background-color: #eee;
+      }
+    }
+    &_btnbox {
+      margin: 3rem auto;
+      text-align: center;
+      &_btn {
+        border: 1px solid $color-stylish;
+        background: none;
+        width: 10rem;
+        height: 5rem;
+        text-align: center;
+        padding: 1rem;
+        color: $color-stylish;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.5s ease;
+      }
+      &_btn:hover {
+        background-color: #eee;
+      }
+    }
+  }
+}
