@@ -12,8 +12,35 @@
 
 html {
   font-size: 62.5%;
+  @include respond(SMALL) {
+    font-size: 40%;
+  }
 }
 
 body {
   font-family: sans-serif;
+}
+
+.notification {
+  margin-top: 4rem;
+  color: #1098ad;
+  text-align: center;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    // border-radius: 100%;
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
 }

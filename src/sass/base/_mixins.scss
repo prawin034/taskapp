@@ -1,0 +1,56 @@
+// resposnive desktop first approach
+
+/*
+
+0 - 600PX      - PHONE    - 37.5em
+
+600PX - 900PX  - TAB-PORT - 5
+
+900PX - 1200PX - TAB-LAND 
+
+1200PX - 1800PX - DESKTOPS
+
+
+
+$BREAKPOINTS 
+
+PHONE 
+TAB-PORT 
+TAB-LAND
+DESKTOPS
+*/
+
+@mixin respond($BREAKPOINT) {
+  @if $BREAKPOINT == SMALL {
+    @media only screen and (max-width: 31.8em) {
+      @content;
+    }
+  }
+  @if $BREAKPOINT == PHONE {
+    @media only screen and (max-width: 37.8em) {
+      @content;
+    }
+  }
+
+  @if $BREAKPOINT == TAB-PORT {
+    @media only screen and (max-width: 56.5em) {
+      @content;
+    }
+  }
+  @if $BREAKPOINT == TAB-PORTMID {
+    @media only screen and (max-width: 62.5em) {
+      @content;
+    }
+  }
+
+  @if $BREAKPOINT == TAB-LAND {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $BREAKPOINT == DESKTOP {
+    @media only screen and (max-width: 112.5em) {
+      @content;
+    }
+  }
+}
